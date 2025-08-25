@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rafeds Receptsamling - Upptäck autentiska recept från hela världen. Utforska olika matkulturer och traditioner.">
+    <title>Rafeds Receptsamling | Recept från hela världen</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navigation" aria-label="Huvudnavigation">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <h1 class="site-title">
+                        <a href="index.html">
+                            <span class="main-title">Rafeds Receptsamling</span>
+                            <span class="subtitle">Recept från hela världen</span>
+                        </a>
+                    </h1>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Öppna meny" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem" aria-current="page">Hem</a></li>
+                    <li role="none"><a href="search.html" role="menuitem">Sök recept</a></li>
+                    <li role="none"><a href="categories.html" role="menuitem">Kategorier</a></li>
+                    <li role="none"><a href="randoms.html" role="menuitem">Slumpade maträtter</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">Om oss</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 id="hero-heading" class="hero-title">Välkommen till världens kök</h2>
+                    <p class="hero-subtitle">Upptäck den rika traditionen av internationella rätter från olika kulturer</p>
+                    <a href="search.html" class="cta-button" aria-describedby="cta-description">
+                        Börja utforska recept
+                    </a>
+                    <span id="cta-description" class="sr-only">Gå till sidan för att söka efter recept</span>
+                </div>
+                <div class="hero-image">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&h=600&fit=crop">
+                        <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=450&fit=crop">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop" 
+                             alt="Traditionell middag med olika internationella rätter på träbord" 
+                             loading="eager">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-recipes" aria-labelledby="featured-heading">
+            <div class="container">
+                <h2 id="featured-heading" class="section-title">Dagens recept</h2>
+                <div id="daily-recipes" class="recipe-grid" role="region" aria-live="polite">
+                    <div class="loading-message">
+                        <p>Laddar dagens recept...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-preview" aria-labelledby="categories-heading">
+            <div class="container">
+                <h2 id="categories-heading" class="section-title">Utforska kategorier</h2>
+                <div class="categories-grid">
+                    <article class="category-card">
+                        <h3>Förrätter</h3>
+                        <p>Små rätter och tillbehör från olika kulturer - perfekta för att börja måltiden eller för social samvaro</p>
+                        <a href="categories.html#mezze" class="category-link" aria-label="Visa förrätter">Utforska →</a>
+                    </article>
+                    
+                    <article class="category-card">
+                        <h3>Huvudrätter</h3>
+                        <p>Traditionella rätter med kött, fisk och vegetariska alternativ från världens olika kök</p>
+                        <a href="categories.html#main" class="category-link" aria-label="Visa huvudrätter">Utforska →</a>
+                    </article>
+                    
+                    <article class="category-card">
+                        <h3>Desserter</h3>
+                        <p>Söta läckerheter och bakverk från olika kulturer - perfekta avslutningar på måltiden</p>
+                        <a href="categories.html#desserts" class="category-link" aria-label="Visa desserter">Utforska →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="widget-section" aria-labelledby="widget-heading">
+            <div class="container">
+                <div id="widget-heading" class="widget-header">
+                    <h2>Receptsökare</h2>
+                </div>
+                <div id="recipe-widget" role="application" aria-label="Interaktiv receptsökare">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rafeds Receptsamling</h3>
+                    <p>Upptäck världens smaker och kulinariska traditioner</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Snabblänkar</h4>
+                    <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="search.html">Sök recept</a></li>
+                    <li><a href="categories.html">Kategorier</a></li>
+                    <li><a href="randoms.html">Slumpade maträtter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Datakällor</h4>
+                    <p>Recept från <a href="https://www.themealdb.com/" target="_blank" rel="noopener">TheMealDB API</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rafeds Receptsamling. Skapad för att utforska världens matkultur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

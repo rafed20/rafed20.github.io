@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Utforska kategorier av internationella recept - förrätter, huvudrätter, desserter och vegetariska alternativ från världens kök.">
+    <title>Kategorier - Rafeds Receptsamling | Internationella recept kategorier</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navigation" aria-label="Huvudnavigation">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <h1 class="site-title">
+                        <a href="index.html">
+                            <span class="main-title">Rafeds Receptsamling</span>
+                            <span class="subtitle">Recept från hela världen</span>
+                        </a>
+                    </h1>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Öppna meny" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Hem</a></li>
+                    <li role="none"><a href="search.html" role="menuitem">Sök recept</a></li>
+                    <li role="none"><a href="categories.html" role="menuitem" aria-current="page">Kategorier</a></li>
+                    <li role="none"><a href="randoms.html" role="menuitem">Slumpade maträtter</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">Om oss</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <h2 id="page-title" class="page-title">Kategorier</h2>
+                <p class="page-subtitle">Utforska olika typer av internationella rätter från världens kök</p>
+            </div>
+        </section>
+
+        <section class="categories-overview" aria-labelledby="overview-heading">
+            <div class="container">
+                <h3 id="overview-heading" class="section-title">Upptäck matkategorier</h3>
+                
+                <div class="categories-main-grid">
+                    <article class="category-feature" id="starter">
+                        <div class="category-image">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600&h=400&fit=crop">
+                                <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500&h=350&fit=crop">
+                                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=500&h=350&fit=crop" 
+                                     alt="Förrätter och smårätter från olika kulturer" 
+                                     loading="eager">
+                            </picture>
+                        </div>
+                        <div class="category-content">
+                            <h4 class="category-title">Förrätter</h4>
+                            <p class="category-description">
+                                Små rätter och aptitretare från världens olika kök. Perfekta för att börja måltiden 
+                                eller för social samvaro - från tapas till dim sum, från bruschetta till mezze.
+                            </p>
+                            <button class="category-btn" data-category="Starter" aria-describedby="starter-description">
+                                Visa förrätter
+                            </button>
+                            <span id="starter-description" class="sr-only">Ladda recept för förrätter och aptitretare</span>
+                        </div>
+                    </article>
+
+                    <article class="category-feature" id="main">
+                        <div class="category-image">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&h=400&fit=crop">
+                                <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500&h=350&fit=crop">
+                                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=280&fit=crop" 
+                                     alt="Traditionella huvudrätter från olika kulturer" 
+                                     loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="category-content">
+                            <h4 class="category-title">Huvudrätter</h4>
+                            <p class="category-description">
+                                Mättande rätter från olika kulturer - från italiensk pasta till indisk curry, 
+                                från mexikanska tacos till japansk sushi. Huvudrätterna utgör hjärtat i världens kök.
+                            </p>
+                            <button class="category-btn" data-category="Beef" aria-describedby="main-description">
+                                Visa huvudrätter
+                            </button>
+                            <span id="main-description" class="sr-only">Ladda recept för huvudrätter</span>
+                        </div>
+                    </article>
+
+                    <article class="category-feature" id="desserts">
+                        <div class="category-image">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop">
+                                <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=350&fit=crop">
+                                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=280&fit=crop" 
+                                     alt="Desserter och sötsaker från olika kulturer" 
+                                     loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="category-content">
+                            <h4 class="category-title">Desserter</h4>
+                            <p class="category-description">
+                                Söta avslutningar från världens olika kulturer - från franska macarons till 
+                                italiensk tiramisu, från amerikanska pies till asiatiska mochi.
+                            </p>
+                            <button class="category-btn" data-category="Dessert" aria-describedby="dessert-description">
+                                Visa desserter
+                            </button>
+                            <span id="dessert-description" class="sr-only">Ladda recept för desserter och sötsaker</span>
+                        </div>
+                    </article>
+
+                    <article class="category-feature" id="vegetarian">
+                        <div class="category-image">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop">
+                                <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=350&fit=crop">
+                                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=280&fit=crop" 
+                                     alt="Vegetariska rätter från olika kulturer" 
+                                     loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="category-content">
+                            <h4 class="category-title">Vegetariska rätter</h4>
+                            <p class="category-description">
+                                Världens rika vegetariska traditioner med bönor, linser, grönsaker och spannmål. 
+                                Från indiska dal till medelhavsmat, från asiatiska tofu-rätter till sydamerikanska quinoa.
+                            </p>
+                            <button class="category-btn" data-category="Vegetarian" aria-describedby="veg-description">
+                                Visa vegetariska recept
+                            </button>
+                            <span id="veg-description" class="sr-only">Ladda vegetariska recept</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-results" aria-labelledby="results-heading">
+            <div class="container">
+                <h3 id="results-heading" class="results-title" hidden>Recept i vald kategori</h3>
+
+                <div id="category-recipes" class="recipe-results" role="region" aria-live="polite" aria-label="Kategorirecept">
+                    <div class="no-category-message">
+                        <h4>Välj en kategori för att se recept</h4>
+                        <div class="category-stats">
+                            <h5>Våra kategorier innehåller:</h5>
+                            <ul>
+                                <li>🥗 Förrätter och aptitretare från världens kök</li>
+                                <li>🍖 Traditionella huvudrätter med olika kött och fisk</li>
+                                <li>🧁 Desserter och sötsaker från olika kulturer</li>
+                                <li>🥬 Vegetariska alternativ från hela världen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more-container" hidden>
+                    <button id="load-more" class="load-more-btn" aria-describedby="load-more-description">
+                        Ladda fler recept
+                    </button>
+                    <span id="load-more-description" class="sr-only">Ladda fler recept i denna kategori</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cultural-context" aria-labelledby="context-heading">
+            <div class="container">
+                <h3 id="context-heading" class="section-title">Matens roll i olika kulturer</h3>
+                
+                <div class="context-grid">
+                    <article class="context-card">
+                        <div class="context-icon">🏠</div>
+                        <h4>Gästfrihet</h4>
+                        <p>I många kulturer är det viktigt att alltid ha mat att erbjuda gäster. Olika kulturer har sina egna traditioner för att visa värdskap genom mat.</p>
+                    </article>
+                    
+                    <article class="context-card">
+                        <div class="context-icon">👥</div>
+                        <h4>Familjemåltider</h4>
+                        <p>Måltider är sociala händelser där familjen samlas. Olika kulturer har sina egna seder för hur man delar mat och bygger gemenskap.</p>
+                    </article>
+                    
+                    <article class="context-card">
+                        <div class="context-icon">📚</div>
+                        <h4>Säsongsmat</h4>
+                        <p>Matlagning följer årstiderna runt om i världen, med färska ingredienser på våren och konserverade specialiteter på vintern.</p>
+                    </article>
+                    
+                    <article class="context-card">
+                        <div class="context-icon">🎉</div>
+                        <h4>Regionala skillnader</h4>
+                        <p>Mat från olika regioner skiljer sig åt inom samma land. Kustområden är kända för skaldjur, medan inland ofta fokuserar på kött och spannmål.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rafeds Receptsamling</h3>
+                    <p>Upptäck världens smaker och kulinariska traditioner</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Snabblänkar</h4>
+                    <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="search.html">Sök recept</a></li>
+                    <li><a href="categories.html">Kategorier</a></li>
+                    <li><a href="randoms.html">Slumpade maträtter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Datakällor</h4>
+                    <p>Recept från <a href="https://www.themealdb.com/" target="_blank" rel="noopener">TheMealDB API</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rafeds Receptsamling. Skapad för att utforska världens matkultur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

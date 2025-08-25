@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upptäck slumpmässiga maträtter från hela världen. Perfekt för att hitta inspiration till nya rätter att laga.">
+    <title>Slumpade maträtter - Rafeds Receptsamling | Upptäck nya recept</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navigation" aria-label="Huvudnavigation">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <h1 class="site-title">
+                        <a href="index.html">
+                            <span class="main-title">Rafeds Receptsamling</span>
+                            <span class="subtitle">Recept från hela världen</span>
+                        </a>
+                    </h1>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Öppna meny" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Hem</a></li>
+                    <li role="none"><a href="search.html" role="menuitem">Sök recept</a></li>
+                    <li role="none"><a href="categories.html" role="menuitem">Kategorier</a></li>
+                    <li role="none"><a href="randoms.html" role="menuitem" aria-current="page">Slumpade maträtter</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">Om oss</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <h2 id="page-title" class="page-title">Slumpade maträtter</h2>
+                <p class="page-subtitle">Upptäck nya recept och låt dig inspireras av slumpmässiga rätter från hela världen</p>
+            </div>
+        </section>
+
+        <section class="random-dishes-section" aria-labelledby="random-heading">
+            <div class="container">
+                <div class="random-dishes-header">
+                    <h3 id="random-heading" class="section-title">Låt slumpen bestämma</h3>
+                    <p class="random-dishes-intro">
+                        Ibland är det bästa sättet att hitta inspiration att låta slumpen välja åt dig. 
+                        Klicka på knappen nedan för att upptäcka 12 nya recept från olika kök och kulturer runt om i världen.
+                    </p>
+                    <button id="refresh-random" class="refresh-btn" aria-describedby="refresh-description">
+                        🎲 Ladda nya slumpade recept
+                    </button>
+                    <span id="refresh-description" class="sr-only">Ladda 12 nya slumpmässiga recept</span>
+                </div>
+                
+                <div id="random-recipes-container" class="random-results" role="region" aria-live="polite" aria-label="Slumpmässiga recept">
+                    <div id="random-favorites-grid" class="recipe-results-grid">
+                        <div class="loading-message">
+                            <p>Laddar slumpmässiga recept...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inspiration-section" aria-labelledby="inspiration-heading">
+            <div class="container">
+                <h3 id="inspiration-heading" class="section-title">Varför prova något nytt?</h3>
+                
+                <div class="inspiration-grid">
+                    <article class="inspiration-card">
+                        <div class="inspiration-icon">🌍</div>
+                        <h4>Upptäck nya kulturer</h4>
+                        <p>Varje rätt berättar en historia om sitt ursprung. Genom att prova nya recept får du en smak av olika kulturer och traditioner från hela världen.</p>
+                    </article>
+                    
+                    <article class="inspiration-card">
+                        <div class="inspiration-icon">👨‍🍳</div>
+                        <h4>Utveckla dina färdigheter</h4>
+                        <p>Att laga nya rätter utmanar dig att lära dig nya tekniker, ingredienser och smakkombinationer som gör dig till en bättre kock.</p>
+                    </article>
+                    
+                    <article class="inspiration-card">
+                        <div class="inspiration-icon">🎲</div>
+                        <h4>Bryt rutiner</h4>
+                        <p>Slumpmässiga recept hjälper dig att bryta dig ur matrutinerna och upptäcka rätter du kanske aldrig annars skulle ha provat.</p>
+                    </article>
+                    
+                    <article class="inspiration-card">
+                        <div class="inspiration-icon">🍽️</div>
+                        <h4>Imponera på vänner</h4>
+                        <p>Överraska dina gäster med exotiska och spännande rätter från länder de kanske aldrig besökt. Mat är det bästa sättet att resa utan att lämna hemmet.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cooking-tips" aria-labelledby="tips-heading">
+            <div class="container">
+                <h3 id="tips-heading" class="section-title">Tips för att prova nya recept</h3>
+                
+                <div class="tips-content">
+                    <div class="tips-main">
+                        <h4>Så lyckas du med nya rätter</h4>
+                        <p>Att prova nya recept från olika kulturer kan vara både spännande och utmanande. Här är några tips för att få bästa möjliga resultat:</p>
+                        
+                        <ul class="tips-list">
+                            <li><strong>Läs receptet helt först:</strong> Förstå alla steg innan du börjar laga</li>
+                            <li><strong>Ha alla ingredienser redo:</strong> Mät upp allt innan du börjar</li>
+                            <li><strong>Var inte rädd för nya ingredienser:</strong> Besök en specialbutik för autentiska smaker</li>
+                            <li><strong>Starta enkelt:</strong> Välj receptet med färre ingredienser första gången</li>
+                            <li><strong>Anpassa efter smak:</strong> Justera kryddor och smaker efter din preferens</li>
+                            <li><strong>Ha tålamod:</strong> Många rätter från andra kulturer tar tid att utveckla sina smaker</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tips-sidebar">
+                        <h4>Användbara köksredskap</h4>
+                        <p>För att lyckas med internationell matlagning kan dessa redskap vara användbara:</p>
+                        <ul>
+                            <li>Wok för asiatisk matlagning</li>
+                            <li>Mortel för kryddor</li>
+                            <li>Steamer för dumplings</li>
+                            <li>Paellpanna för spanska rätter</li>
+                            <li>Tandoorugn eller grill för indisk mat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rafeds Receptsamling</h3>
+                    <p>Upptäck världens smaker och kulinariska traditioner</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Snabblänkar</h4>
+                    <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="search.html">Sök recept</a></li>
+                    <li><a href="categories.html">Kategorier</a></li>
+                    <li><a href="randoms.html">Slumpade maträtter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Datakällor</h4>
+                    <p>Recept från <a href="https://www.themealdb.com/" target="_blank" rel="noopener">TheMealDB API</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rafeds Receptsamling. Skapad för att utforska världens matkultur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

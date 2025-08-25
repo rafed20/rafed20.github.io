@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sök internationella recept efter ingredienser eller namn. Hitta traditionella rätter från olika kulturer.">
+    <title>Sök recept - Rafeds Receptsamling | Internationella recept</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navigation" aria-label="Huvudnavigation">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <h1 class="site-title">
+                        <a href="index.html">
+                            <span class="main-title">Rafeds Receptsamling</span>
+                            <span class="subtitle">Recept från hela världen</span>
+                        </a>
+                    </h1>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Öppna meny" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Hem</a></li>
+                    <li role="none"><a href="search.html" role="menuitem" aria-current="page">Sök recept</a></li>
+                    <li role="none"><a href="categories.html" role="menuitem">Kategorier</a></li>
+                    <li role="none"><a href="randoms.html" role="menuitem">Slumpade maträtter</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">Om oss</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <h2 id="page-title" class="page-title">Sök recept</h2>
+                <p class="page-subtitle">Hitta dina favoriträtter från olika kulturer runt om i världen</p>
+            </div>
+        </section>
+
+        <section class="search-section" aria-labelledby="search-heading">
+            <div class="container">
+                <h3 id="search-heading" class="sr-only">Sökformulär</h3>
+                
+                <form class="search-form" role="search" aria-label="Sök recept">
+                    <div class="search-tabs" role="tablist" aria-label="Söktyper">
+                        <button type="button" role="tab" aria-selected="true" aria-controls="name-search" id="name-tab" class="tab-button active">
+                            Sök efter namn
+                        </button>
+                        <button type="button" role="tab" aria-selected="false" aria-controls="ingredient-search" id="ingredient-tab" class="tab-button">
+                            Sök efter ingrediens
+                        </button>
+                    </div>
+
+                    <div id="name-search" role="tabpanel" aria-labelledby="name-tab" class="search-panel active">
+                        <div class="input-group">
+                            <label for="recipe-name" class="input-label">Receptnamn</label>
+                            <input 
+                                type="text" 
+                                id="recipe-name" 
+                                name="recipe-name"
+                                class="search-input"
+                                placeholder="Namn på engelska, t.ex pasta, curry, tacos..."
+                                aria-describedby="search-description"
+                                autocomplete="off"
+                            >
+                        </div>
+                        
+                        <button type="submit" class="search-button" aria-describedby="search-description">
+                            Sök recept
+                        </button>
+                        <span id="search-description" class="sr-only">Sök efter recept baserat på namnet</span>
+                    </div>
+
+                    <div id="ingredient-search" role="tabpanel" aria-labelledby="ingredient-tab" class="search-panel" hidden>
+                        <div class="input-group">
+                            <label for="ingredient-name" class="input-label">Ingrediens</label>
+                            <select id="ingredient-name" name="ingredient-name" class="search-select" aria-describedby="ingredient-help">
+                                <option value="">Välj en ingrediens...</option>
+                                <option value="chicken">Kyckling</option>
+                                <option value="beef">Nötkött</option>
+                                <option value="pork">Fläsk</option>
+                                <option value="salmon">Lax</option>
+                                <option value="rice">Ris</option>
+                                <option value="potato">Potatis</option>
+                                <option value="tomato">Tomat</option>
+                                <option value="onion">Lök</option>
+                                <option value="garlic">Vitlök</option>
+                                <option value="cheese">Ost</option>
+                                <option value="carrot">Morot</option>
+                                <option value="lemon">Citron</option>
+                            </select>
+                            <div id="ingredient-help" class="input-help">
+                                Välj en ingrediens för att hitta recept som innehåller den
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="search-button">
+                            Sök med ingrediens
+                        </button>
+                    </div>
+                </form>
+
+                <div class="quick-searches">
+                    <h4 class="quick-title">Populära sökningar</h4>
+                    <div class="quick-buttons">
+                        <button type="button" class="quick-search-btn" data-search="pasta">Pasta</button>
+                        <button type="button" class="quick-search-btn" data-search="curry">Curry</button>
+                        <button type="button" class="quick-search-btn" data-search="chicken">Kyckling</button>
+                        <button type="button" class="quick-search-btn" data-search="fish">Fisk</button>
+                        <button type="button" class="quick-search-btn" data-search="vegetarian">Vegetariskt</button>
+                        <button type="button" class="quick-search-btn" data-search="dessert">Dessert</button>
+                        <button type="button" class="quick-search-btn" data-search="soup">Soppa</button>
+                        <button type="button" class="quick-search-btn" data-search="salad">Sallad</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section" aria-labelledby="results-heading">
+            <div class="container">
+                <h3 id="results-heading" class="results-title" hidden>Sökresultat</h3>
+                
+                <div id="search-results" class="search-results" role="region" aria-live="polite" aria-label="Sökresultat">
+                    <div class="no-search-message">
+                        <p>Använd sökformuläret ovan för att hitta dina favoritrecept från världens olika kök</p>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300&h=225&fit=crop" 
+                                 alt="Olika kryddor i små skålar från världens kök" 
+                                 loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-tips" aria-labelledby="tips-heading">
+            <div class="container">
+                <h3 id="tips-heading" class="section-title">Söktips</h3>
+                <div class="tips-grid">
+                    <article class="tip-card">
+                        <h4>Sök på engelska</h4>
+                        <p>Sök på engelska namn för bästa och korrekta resultat.</p>
+                    </article>
+                    <article class="tip-card">
+                        <h4>Använd ingredienser</h4>
+                        <p>Har du bara vissa ingredienser hemma? Sök efter vad du kan laga med dem för att upptäcka nya rätter.</p>
+                    </article>
+                    <article class="tip-card">
+                        <h4>Prova snabbsökningarna</h4>
+                        <p>Använd knapparna ovan för populära internationella rätter som pasta, curry och olika typer av kött.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rafeds Receptsamling</h3>
+                    <p>Upptäck världens smaker och kulinariska traditioner</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Snabblänkar</h4>
+                    <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="search.html">Sök recept</a></li>
+                    <li><a href="categories.html">Kategorier</a></li>
+                    <li><a href="randoms.html">Slumpade maträtter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Datakällor</h4>
+                    <p>Recept från <a href="https://www.themealdb.com/" target="_blank" rel="noopener">TheMealDB API</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rafeds Receptsamling. Skapad för att utforska världens matkultur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

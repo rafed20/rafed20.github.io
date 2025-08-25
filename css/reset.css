@@ -1,0 +1,107 @@
+/* CSS Reset & grundstilar */
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Ta bort standardmarginaler och padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML och body inställning */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ta bort liststilar */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Återställ formulärelement */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+/* Ta bort standardknappstilar */
+button {
+    background: none;
+    cursor: pointer;
+}
+
+/* Ta bort standardlänkstilar */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Återställ tabellstilar */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Återställ bildstilar */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ta bort standard fieldset-stilar */
+fieldset {
+    border: none;
+}
+
+/* Endast skärmläsarinnehåll */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Fokusstilar för tillgänglighet */
+:focus-visible {
+    outline: 2px solid #DAA520;
+    outline-offset: 2px;
+}
+
+/* Minska rörelse för användare som föredrar det */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
